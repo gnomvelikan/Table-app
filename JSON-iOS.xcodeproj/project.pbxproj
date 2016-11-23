@@ -13,6 +13,9 @@
 		952CC2A41DE4DCDB00120477 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 952CC2A21DE4DCDB00120477 /* Main.storyboard */; };
 		952CC2A61DE4DCDB00120477 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 952CC2A51DE4DCDB00120477 /* Assets.xcassets */; };
 		952CC2A91DE4DCDB00120477 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 952CC2A71DE4DCDB00120477 /* LaunchScreen.storyboard */; };
+		CED63B4C1DE5646500280DEB /* CustomCelll.m in Sources */ = {isa = PBXBuildFile; fileRef = CED63B4B1DE5646500280DEB /* CustomCelll.m */; };
+		CED63B4E1DE5832400280DEB /* allStations.json.txt in Resources */ = {isa = PBXBuildFile; fileRef = CED63B4D1DE5832400280DEB /* allStations.json.txt */; };
+		CED63B511DE5832E00280DEB /* Model.m in Sources */ = {isa = PBXBuildFile; fileRef = CED63B501DE5832E00280DEB /* Model.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,11 @@
 		952CC2A51DE4DCDB00120477 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		952CC2A81DE4DCDB00120477 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		952CC2AA1DE4DCDB00120477 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CED63B4A1DE5646500280DEB /* CustomCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomCell.h; sourceTree = "<group>"; };
+		CED63B4B1DE5646500280DEB /* CustomCelll.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomCelll.m; sourceTree = "<group>"; };
+		CED63B4D1DE5832400280DEB /* allStations.json.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = allStations.json.txt; path = ../../TestTuTuApp/TestTuTuApp/allStations.json.txt; sourceTree = "<group>"; };
+		CED63B4F1DE5832E00280DEB /* Model.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Model.h; path = ../../TestTuTuApp/TestTuTuApp/Model.h; sourceTree = "<group>"; };
+		CED63B501DE5832E00280DEB /* Model.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Model.m; path = ../../TestTuTuApp/TestTuTuApp/Model.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +66,11 @@
 		952CC2981DE4DCDB00120477 /* JSON-iOS */ = {
 			isa = PBXGroup;
 			children = (
+				CED63B4D1DE5832400280DEB /* allStations.json.txt */,
+				CED63B4F1DE5832E00280DEB /* Model.h */,
+				CED63B501DE5832E00280DEB /* Model.m */,
+				CED63B4A1DE5646500280DEB /* CustomCell.h */,
+				CED63B4B1DE5646500280DEB /* CustomCelll.m */,
 				952CC29C1DE4DCDB00120477 /* AppDelegate.h */,
 				952CC29D1DE4DCDB00120477 /* AppDelegate.m */,
 				952CC29F1DE4DCDB00120477 /* ViewController.h */,
@@ -110,6 +123,7 @@
 				TargetAttributes = {
 					952CC2951DE4DCDB00120477 = {
 						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 7X95S7JFCQ;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -137,6 +151,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CED63B4E1DE5832400280DEB /* allStations.json.txt in Resources */,
 				952CC2A91DE4DCDB00120477 /* LaunchScreen.storyboard in Resources */,
 				952CC2A61DE4DCDB00120477 /* Assets.xcassets in Resources */,
 				952CC2A41DE4DCDB00120477 /* Main.storyboard in Resources */,
@@ -152,7 +167,9 @@
 			files = (
 				952CC2A11DE4DCDB00120477 /* ViewController.m in Sources */,
 				952CC29E1DE4DCDB00120477 /* AppDelegate.m in Sources */,
+				CED63B4C1DE5646500280DEB /* CustomCelll.m in Sources */,
 				952CC29B1DE4DCDB00120477 /* main.m in Sources */,
+				CED63B511DE5832E00280DEB /* Model.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,6 +287,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 7X95S7JFCQ;
 				INFOPLIST_FILE = "JSON-iOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.gnomvelikan.JSON-iOS";
@@ -281,6 +299,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 7X95S7JFCQ;
 				INFOPLIST_FILE = "JSON-iOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.gnomvelikan.JSON-iOS";
@@ -307,6 +326,7 @@
 				952CC2AF1DE4DCDB00120477 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
